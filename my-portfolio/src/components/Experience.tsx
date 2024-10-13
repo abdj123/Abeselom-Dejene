@@ -35,14 +35,16 @@ const Experience = () => {
                 <span className="text-sm text-purple-100">{exp.company}</span>
               </h6>
               <p className="mb-4 text-neutral-400">{exp.description}</p>
-              {exp.technologies.map((tech, indx) => (
-                <span
-                  key={indx}
-                  className="bg-neutral-900 mx-4 p-2 rounded-[0.4rem] text-purple-600"
-                >
-                  {tech}
-                </span>
-              ))}
+              <div className="overflow-x-scroll sm:overflow-x-hidden overflow-y-hidden w-full">
+                {exp.technologies.map((tech, indx) => (
+                  <span
+                    key={indx}
+                    className="bg-neutral-900 mx-4 p-2 rounded-[0.4rem] text-purple-600"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}

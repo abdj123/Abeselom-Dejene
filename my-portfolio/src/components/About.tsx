@@ -1,3 +1,4 @@
+import { MdArrowOutward } from "react-icons/md";
 import AboutImage from "../assets/about.png";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
@@ -25,8 +26,18 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2"
         >
-          <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+          <div className="flex flex-col justify-center lg:justify-start">
+            <p className="my-2 max-w-xl py-6 text-[16px]">{ABOUT_TEXT}</p>
+            <a
+              target="_blank"
+              className="flex items-center text-xl text-bold"
+              href="https://drive.google.com/file/d/1xHX2simcRE-wzS6SsaUAy8KFi1btTGRh/view?usp=drive_link"
+            >
+              View Full Resume{" "}
+              <span className="pl-2">
+                <MdArrowOutward></MdArrowOutward>
+              </span>
+            </a>
           </div>
         </motion.div>
       </div>

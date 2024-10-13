@@ -59,7 +59,7 @@ export const PROJECTS = [
     description:
       `Developed a business and e-commerce app enabling users to connect, chat, create, and
       share products with clients.`,
-    technologies: ["Flutter", "Flask API", "SQLite", "Firebase","Socket.IO"],
+    technologies: ["Flutter", "SQLite", "Firebase","Socket.IO", "Flask"],
   },
   {
     title: "Portfolio Website",
